@@ -1,0 +1,36 @@
+.container{
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.container p {
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+@media print{
+    .container{
+        color: red;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width: 500px) {
+
+    .container{
+        flex-flow: column wrap;
+        background-color: blue;
+    }
+}
+
+@media screen and (orientation:landscape) {
+
+    .container{
+        background-color: rgb(139, 212, 158);
+    }
+}
+
